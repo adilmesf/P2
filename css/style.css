@@ -1,0 +1,49 @@
+footer{
+    display:flex;
+    flex-direction:row;
+    align-items: flex-start;
+}
+footer div:nth-child(1){
+    flex:1 1 auto;
+}
+footer div:nth-child(2){
+    flex:1 1 auto;
+}
+footer div:nth-child(3){
+    flex:1 1 auto;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+header{
+    display:flex;
+    flex-direction:row;
+    align-items: flex-start;    
+}
+header div:nth-child(1){
+    flex:1 1 auto;
+    border:1px solid black;
+}
+header div:nth-child(2){
+    flex:1 1 auto;
+    text-align: right;
+
+
+}
+nav{
+    height: 100px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;  
+    border:1px solid black;
+}
+nav a{
+    text-decoration:none;
+}
+nav a:visited{
+    color:black;
+}
+nav a:hover{
+    text-decoration-line: overline;
+}
