@@ -250,19 +250,26 @@ footer ul{
     background-color: white;
 }
 .article_activite_bis{
-	display:flex;
-	flex-direction:column;
+	width:150px;
 }
+
 .activite_txt{
 	font-size: 12px;
 	font-weight: bold;
 }
 .activite_img_petit{
-
+	height: 100%;
 }
 .activite_img_moyen{
-	
+	background-size: cover;
+    background-position: center;
+	height: 100%;
+	width: 100%;
 }
 .activite_img_grand{
+    background-size: cover;
+    background-position: center;
+	height: 90%;
+	width: 100%;
 	
 }
