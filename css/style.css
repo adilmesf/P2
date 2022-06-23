@@ -231,3 +231,38 @@ footer ul{
 	transition: 0.3s;
 }
 
+/* ACTIVITES */
+#activites_main{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	height: 400px;	
+	width:100%;
+}
+.article_activite{
+	border:6px solid white;
+	border-radius:20px;
+	width:28%;
+	box-shadow: 0px 0px 15px 0 #00000038;
+	margin-top: 2%;
+	margin-bottom: 2%;
+    overflow: hidden;
+    background-color: white;
+}
+.article_activite_bis{
+	display:flex;
+	flex-direction:column;
+}
+.activite_txt{
+	font-size: 12px;
+	font-weight: bold;
+}
+.activite_img_petit{
+
+}
+.activite_img_moyen{
+	
+}
+.activite_img_grand{
+	
+}
