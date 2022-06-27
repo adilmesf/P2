@@ -20,10 +20,11 @@ header{
 
 #logo{
 	flex:1 1 auto;
+	width: 70%;
 }
 
 #navigation{
-    width: 300px;
+    width: 30%;
 	text-align: center;
 }
 #navigation ul{
@@ -306,9 +307,7 @@ footer ul{
 	font-weight: bold;	
 }
 
-@media all   
-and (min-width > 768px)
-and (max-width < 992px)
+@media (max-width: 768px)
 {
 	#main{
 		font-family:'Raleway';
@@ -320,54 +319,40 @@ and (max-width < 992px)
 	/* Hebergement */
 	#hebergement_ville {
 		display:flex;
-		flex-direction:row;
+		flex-direction:column-reverse;
 		justify-content: space-around;
 		height: 70%;
 		width: 100%;
 	}
-
+	#filtre{
+		display:flex;
+		flex-direction: column;		
+	}
 	#filtre_main{
 		display:flex;
-		/*flex-direction: column;*/
+		flex-direction: column;
+		justify-content: space-around;
+		width: 100%;
+
+	}
+	.filtre_img{
+		height: 42px;
+		width: 42px;
+		border-radius: 21px;
+		background-color: #DEEBFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		left:5%;
+		bottom:2%;
 	}
 	#activites_main{
 		display:flex;
 		flex-flow: row wrap;
 		justify-content: space-around;
-		flex-direction: column;
+		flex-direction:column-reverse;
 		height: 400px;	
 		width:100%;
 	}
 }
-@media all and (max-width < 768px)
-{
-	#main{
-		font-family:'Raleway';
-		margin:auto;
-		width:100%;
-		display:flex;
-		flex-direction: column;
-	}
-	/* Hebergement */
-	#hebergement_ville {
-		display:flex;
-		flex-direction:row;
-		justify-content: space-around;
-		height: 70%;
-		width: 100%;
-	}
-
-	#filtre_main{
-		display:flex;
-		flex-direction: column;
-	}
-	#activites_main{
-		display:flex;
-		flex-flow: row wrap;
-		justify-content: space-around;
-		flex-direction: column-reverse;
-		height: 400px;	
-		width:100%;
-	}
-}
-
