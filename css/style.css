@@ -49,7 +49,32 @@ header{
 }
 
 /* FORMULAIRE */
-
+#formulaire_form{
+    display: flex;
+    flex-direction: row;
+}
+#formulaire_img{
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    background-color: #F2F2F2;
+    width: 30px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.label_recherche{
+    width: 123px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
 /* FILTRES */
 #filtre {
     display: flex;
