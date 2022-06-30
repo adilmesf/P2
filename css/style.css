@@ -6,6 +6,7 @@
 	margin:auto;
 	width:992px;
 	max-width: 100%;
+	border: thin solid black;
 }
 
 a:visited{
@@ -28,6 +29,7 @@ a:visited{
     width: 30%;
 	text-align: center;
 }
+
 #navigation ul{
     display: flex;
     list-style-type: none;
@@ -50,6 +52,11 @@ a:visited{
 }
 
 /* FORMULAIRE */
+#formulaire{
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
 #formulaire_form{
     display: flex;
     flex-direction: row;
@@ -76,10 +83,22 @@ a:visited{
     font-weight: bold;
     color: white;
 }
+.formulaire_titre{
+	font-weight: bold;
+}
 /* FILTRES */
 #filtre {
     display: flex;
 	vertical-align: middle;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+.filtre_titre{
+    display: flex;
+	vertical-align: middle;	
+	align-items: center;
+	font-weight: bold;
 }
 #filtre a{
     text-decoration:none;
@@ -142,11 +161,22 @@ a:visited{
 	color:#0065FC;
 	
 }
+
+/* Information */
+#information{
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
 /* Hebergement */
 #hebergement_ville {
 	display:flex;
 	justify-content: space-around;
 	height: 500px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 20px;
 }
 #hebergement {
 	background-color:#F2F2F2;
@@ -246,7 +276,11 @@ a:visited{
 /* ACTIVITES */
 #activite{
 	height: 500px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 20px;
 }
+
 #activites_main{
 	display:flex;
 	flex-flow: row wrap;
@@ -304,6 +338,7 @@ a:visited{
 #activite_titre{
 	padding-top: 5px;
 	padding-left: 10px;
+	padding-bottom: 25px;
 	font-weight: bold;	
 }
 /* FOOTER */
@@ -311,6 +346,7 @@ footer{
     display:flex;
     flex-direction:row;
     align-items: flex-start;
+	background-color:#F2F2F2;
 }
 footer div:nth-child(1){
     flex:1 1 auto;
@@ -324,6 +360,24 @@ footer div:nth-child(3){
 footer ul{
     list-style-type: none;
     padding: 0;
+}
+.foot p{
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.foot{
+	width: 200px;
+	margin-left: 30px;
+	font-size: 12px;
+}
+.foot li{
+	padding-bottom: 10px;
+}
+.foot a{
+	text-decoration: none;
+}
+.foot a:visited{
+	color: black;
 }
 
 
