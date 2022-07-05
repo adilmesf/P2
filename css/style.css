@@ -4,9 +4,9 @@
 #main{
 	font-family:'Raleway';
 	margin:auto;
-	width:992px;
+	/*width:992px;*/
+	/*width: 1440px;*/
 	max-width: 100%;
-	border: thin solid black;
 }
 
 a:visited{
@@ -24,6 +24,7 @@ a:visited{
 	flex:1 1 auto;
 	width: 70%;
 }
+
 
 #navigation{
     width: 30%;
@@ -56,9 +57,14 @@ a:visited{
 	margin-left: 30px;
 	margin-right: 30px;
 	margin-bottom: 20px;
+	width: 100%;
 }
 #formulaire_form{
     display: flex;
+    flex-direction: row;
+}
+#formulaire_form2{
+	display: flex;
     flex-direction: row;
 }
 #formulaire_img{
@@ -138,6 +144,7 @@ a:visited{
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	font-weight: bold;
+	width: 124px;
 }
 .filtre_txt:hover{
 	background-color: #0065FC;
@@ -189,37 +196,38 @@ a:visited{
 }
 .etoiles{
 	display: flex;
+	font-size:12px;
 }
 .hebergement_titre{
 	padding-top: 30px;
-	padding-left: 10px;
+	padding-left: 26px;
 	font-weight: bold;
 
 }
 #hebergement_foot{
-	padding-top: 5px;
-	padding-left: 10px;
+	padding-top: 31px;
+	padding-left: 26px;
 	font-weight: bold;
 }
 
 #article_main{
 	display:flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 .article{
 	border:6px solid white;
 	border-radius:20px;
 	width:28%;
+	height: 170px;
 	box-shadow: 0px 0px 15px 0 #00000038;
-	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-top:15px;
     overflow: hidden;
     background-color: white;
 }
 
 .article_img {
-	height: 90px;
+	height: 102px;
     background-size: cover;
     background-position: center;
 }
@@ -230,6 +238,11 @@ a:visited{
 }
 .article_sous_txt{
 	font-weight: bold;
+	margin-top: 5px;
+}
+.article_txt_prix{
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 #populaire{
@@ -248,30 +261,43 @@ a:visited{
 	display:flex;
 	flex-flow: row wrap;
 	flex-direction: column;
+	padding-left: 20px;
 }
-
 .article_pop{
 	display:flex;
 	flex-direction:row;
-	width: 90%;
-	height: 20%;
-	margin-top: 2%;
-	margin-bottom: 2%;
+	width: 82%;
+	height: 114px;
+	margin-top: 20px;
     overflow: hidden;
     background-color: white;
 	border:6px solid white;
 	border-radius:20px;
-	font-size: 14px;
+	
 }
-
+.pop_txt_nom{
+	font-size: 13px;
+	font-weight: bold;
+	margin-left:10px
+}
+.pop_txt_prix{
+	font-size: 13px;
+	margin-left:10px
+}
 .pop_img {
-	height: 150px;
-	width: 150px;
+	height: 114px;
+	width: 38%;
     background-size: cover;
     background-position: center;
 }
+.etoiles_bis{
+	margin-top: 20px;
+	margin-left: 10px;
+	display: flex;
+	font-size: 12px;
+}
 .pop_txt{
-	width:100%;
+	width:62%;
 }
 .fa-star1{
 	color:#0065FC;
@@ -301,7 +327,7 @@ a:visited{
 	/*margin-bottom: 2%;*/
     overflow: hidden;
     background-color: white;
-	height: 100%;
+	height: 400px;
 }
 
 .article_activite_bis{
@@ -309,9 +335,11 @@ a:visited{
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+	height: 400px;
 }
 .article_activite_ter{
 	width: 100%;
+	height: 150px;
 	border-radius:20px;
 	background-color: white;
 	box-shadow: 0px 0px 15px 0 #00000038;
