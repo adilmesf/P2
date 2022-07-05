@@ -185,6 +185,9 @@ a:visited{
 	margin-right: 30px;
 	margin-bottom: 20px;
 }
+#hebergement_ville a{
+	text-decoration: none;
+}
 #hebergement {
 	background-color:#F2F2F2;
 	border-radius:20px;
@@ -256,6 +259,8 @@ a:visited{
 	padding-top: 30px;
 	padding-left: 10px;
 	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
 }
 #populaire_main{
 	display:flex;
@@ -274,6 +279,9 @@ a:visited{
 	border:6px solid white;
 	border-radius:20px;
 	
+}
+.article_pop a{
+	border: thin black solid;
 }
 .pop_txt_nom{
 	font-size: 13px;
@@ -352,20 +360,17 @@ a:visited{
 	padding-left: 5px;
 }
 .activite_img_petit{
-	height: 70%;
 	background-size: cover;
     background-position: center;
 }
 .activite_img_moyen{
 	background-size: cover;
     background-position: center;
-	height: 70%;
 	width: 100%;
 }
 .activite_img_grand{
     background-size: cover;
     background-position: center;
-	height: 90%;
 	width: 100%;
 	
 }
@@ -414,7 +419,40 @@ footer ul{
 	color: black;
 }
 
+@media (min-width: 769px) and (max-width:992px)
+{
+	#main{
+		font-family:'Raleway';
+		margin:auto;
+		width:992px;
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
 
+	#hebergement_ville {
+		display:flex;
+		flex-direction:column-reverse;
+		justify-content: start;
+		width: 100%;
+		height: 800px;
+		border: thin black solid;
+	}
+	#populaire{
+		width: 100%;
+	}
+	#populaire_main{
+		display:flex;
+		flex-flow: row;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		padding-left: 20px;
+		margin-top: 10px;
+	}
+	.article_pop{
+		width: 20%;
+	}
+}
 
 @media (max-width: 768px)
 {
@@ -423,8 +461,8 @@ footer ul{
 		margin:auto;
 		display:flex;
 		flex-direction: column;
-		/*box-sizing: border-box;*/
 		width: 768px;
+		max-width: 100%;
 	}
 	#header{
 		display:flex;
@@ -436,8 +474,9 @@ footer ul{
 		display:flex;
 		flex-direction:column-reverse;
 		justify-content: space-around;
-		height: 70%;
 		width: 100%;
+		height: 1800px;
+		border: thin black solid;
 	}
 	#hebergement {
 		background-color:white;
@@ -466,16 +505,10 @@ footer ul{
 		align-items: center;
 		justify-content: center;
 		position: relative;
-		left:5%;
-		bottom:2%;
 	}
 	#article_main{
 		display:flex;
 		flex-direction: column;
-	}
-
-	#activite{
-		height:500px;
 	}
 	#activites_main{
 		display:flex;
@@ -486,7 +519,6 @@ footer ul{
 		border-radius:20px;
 		width:40%;
 		box-shadow: 0px 0px 15px 0 #00000038;
-		margin-bottom: 2%;
 		overflow: hidden;
 		background-color: white;
 	}
